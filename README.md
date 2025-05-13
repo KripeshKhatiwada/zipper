@@ -1,19 +1,20 @@
-# zipper
-A file compression and decompression tool
 
-# 🗜️ File Compressor in C++
+---
 
-This is a simple file compression and decompression tool built in C++ to demonstrate basic file handling and data manipulation. It is designed to be easy to understand, modify, and extend.
+### ✅ 4. `zipper`
 
-## 🔧 Features
+```markdown
+# Zipper — C++ File Compressor
 
-- Compresses a plain text file and outputs a compressed binary file.
-- Decompresses the binary file back to the original text.
-- Modular code with separate `compress` and `decompress` modules.
-- Command-line interface.
-- Platform-independent (tested on Windows with CMake and CLion).
-## 🛠️ Getting Started
-Going to use compression algorithms like Huffman
+A basic command-line file compressor and decompressor written in C++.
 
-./file_compresser compress <input_file> <output_file>
-./file_compresser decompress <input_file> <output_file>
+## ⚙️ Features
+- Compress and decompress text files
+- Intended support for Huffman encoding
+- Modular design (compress.cpp, decompress.cpp)
+
+## 🚀 Usage
+```bash
+g++ main.cpp compress.cpp decompress.cpp -o zipper
+./zipper compress input.txt output.bin
+./zipper decompress output.bin recovered.txt
